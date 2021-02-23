@@ -58,7 +58,9 @@ function setup() {
 }
 
 function draw() {
-  background("white");  
+if(backgroundImg){
+  background(backgroundImg);  
+  }
   Engine.update(engine);
  ground.display();
  ground2.display();
